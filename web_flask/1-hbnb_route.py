@@ -19,7 +19,7 @@ def hello_hbnb():
     Takes zero arguments but returns text
     thats rendered at /hbnb path
     """
-    return "HBNB!"
+    return "HBNB"
 
 
 if __name__ == "__main__":
