@@ -22,6 +22,17 @@ def hello_hbnb():
     return "HBNB"
 
 
+@app.route("/c/<text>")
+def c_text(text):
+    """
+    Argument:
+        text
+    Return:
+         a text begining with C and followed by argument passed
+    """
+    return "C {}".format(text.replace("_", " "))
+
+
 if __name__ == "__main__":
     """runs the app when the function is invorked"""
     app.run(host='0.0.0.0', port=5000)
